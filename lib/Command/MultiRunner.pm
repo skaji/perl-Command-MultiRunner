@@ -61,6 +61,9 @@ sub run ($self) {
             } elsif ($ret > 0) {
                 $pid[$i] = undef;
                 $exit[$i] = $?;
+                if (my $cb = $runner[$i]{exit}) {
+                    $cb->($exit[$i]);
+                }
             }
         }
 

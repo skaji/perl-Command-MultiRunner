@@ -12,6 +12,7 @@
     },
     "runtime": {
       "requires": {
+        "Command::Runner": "0",
         "perl": "v5.42"
       }
     }

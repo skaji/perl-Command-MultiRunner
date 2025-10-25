@@ -1,4 +1,6 @@
-use v5.20;
-use Test::More tests => 1;
+use v5.42;
+use Test2::V0;
 use Command::MultiRunner;
+
 pass "happy hacking!";
+done_testing;
